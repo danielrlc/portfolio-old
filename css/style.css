@@ -71,6 +71,11 @@ p {
   display: inline-block;
 }
 
+/*not sure why this didn't work???
+*//*.project:hover {
+  background-color: #eee;
+}*/
+
 .project-image {
   height: 160px;
   width: 280px;
