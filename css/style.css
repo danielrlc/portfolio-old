@@ -66,9 +66,10 @@ p {
   height: 320px;
   width: 280px;
   background-color: #aaa;
-  /*padding: 20px;*/
+  padding: 5px;
   margin: 20px;
   display: inline-block;
+  border-radius: 5px;
 }
 
 /*not sure why this didn't work???
@@ -77,14 +78,14 @@ p {
 }*/
 
 .project-image {
-  height: 160px;
-  width: 280px;
+  height: 155px;
+  width: 270px;
   background-color: #555;
 }
 
 .project-info {
-  height: 160px;
-  width: 280px;
+  height: 155px;
+  width: 270px;
   background-color: #777;
 }
 
