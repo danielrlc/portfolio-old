@@ -8,6 +8,7 @@ body {
   font-family: "Merriweather", serif;
   text-align: center;
   color: #56564e;
+  line-height: 1.2;
 }
 
 .title {
@@ -36,8 +37,9 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 18px;
   padding: 20px 20px 0 20px;
+  color: #709d9e;
 }
 
 p {
@@ -64,10 +66,20 @@ p {
   border-radius: 5px;
 }
 
-/*not sure why this didn't work???
-*//*.project:hover {
-  background-color: #eee;
-}*/
+div.project:hover {
+  background-color: #709d9e;
+}
+
+/*.fade {
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+  }
+
+  .fade:hover {
+  opacity: 0.5;
+  }*/
 
 .project-image {
   height: 155px;
