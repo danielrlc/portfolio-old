@@ -74,18 +74,18 @@ h2 {
   color: #709d9e;
 }
 
-.project-container p {
-  padding: 20px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.9em;
-}
-
 .project-container {
   width: 1010px;
   margin: 40px auto;
   padding: 20px;
   background-color: #dcdedf;
   /*border-radius: 5px;*/
+}
+
+.project-container p {
+  padding: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.9em;
 }
 
 .project {
@@ -165,4 +165,14 @@ div.project:hover {
     line-height: 1.6;
     font-size: 0.9em;
   }
+  .project-container {
+    width: 300px;
+    margin: 40px auto;
+    padding: 5px;
+  }
+  .project {
+  margin: 5px;
+  display: inline-block;
+  border-radius: 5px;
+}
 }
