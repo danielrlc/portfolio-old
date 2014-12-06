@@ -79,7 +79,6 @@ h2 {
   margin: 40px auto;
   padding: 20px;
   background-color: #dcdedf;
-  /*border-radius: 5px;*/
 }
 
 .project-container p {
@@ -102,17 +101,6 @@ div.project:hover {
   background-color: #709d9e;
 }
 
-/*.fade {
-  opacity: 1;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
-  }
-
-  .fade:hover {
-  opacity: 0.5;
-  }*/
-
 .project-image {
   height: 155px;
   width: 270px;
@@ -127,7 +115,6 @@ div.project:hover {
 }
 
 /* Break point - drops from 3 to 2 columns */
-/*@media (max-width: 1023px) {*/
 @media only screen and (max-device-width: 1023px) {
   .project-container {
     width: 690px;
@@ -135,8 +122,6 @@ div.project:hover {
 }
 
 /* Break point - drops from 2 to 1 columns */
-/*@media only screen and (max-device-width: 709px) {
-*/
 @media screen and (max-width: 709px) {
   .project-container {
     width: 360px;
@@ -157,8 +142,9 @@ div.project:hover {
   }
 }
 
-/* More compact text for mobile screens */
-@media screen and (max-width: 500px) {
+/* Final breakpoint to fit content in narrow width.
+Also more compact text for mobile screens. */
+@media screen and (max-width: 480px) {
   .about {
     width: 88%;
     margin: 0 auto;
@@ -171,8 +157,8 @@ div.project:hover {
     padding: 5px;
   }
   .project {
-  margin: 5px;
-  display: inline-block;
-  border-radius: 5px;
-}
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+  }
 }
