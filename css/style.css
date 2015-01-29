@@ -146,6 +146,48 @@ div.project:hover {
   padding: 20px;
 }
 
+
+
+/*********************************************************/
+/* TABLE
+**********************************************************/
+
+table {
+  font-size: 14px;
+}
+
+caption {
+  display: none;
+}
+
+thead th {
+  background: #709d9e;
+  color: #fff;
+}
+
+th td {
+  text-decoration: bold;
+}
+
+th, td {
+  padding: 10px;
+}
+
+tr:nth-child(even) {
+  background: #e8eeef;
+}
+
+tfoot td {
+  color: #888;
+  font-size: 13px;
+}
+
+
+
+/*********************************************************/
+/* MEDIA QUERIES
+**********************************************************/
+
 /* Break point - drops from 3 to 2 columns */
 @media (max-width: 1023px) {
   .project-container {
