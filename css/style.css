@@ -38,6 +38,10 @@ a {
   color: #555;
 }
 
+h4 a {
+    text-decoration: underline;
+}
+
 .about, .project-notes {
   margin: 0 auto;
   width: 610px;
