@@ -5,8 +5,8 @@
     <!-- Mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daniel Clarke - Portfolio</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css" media="screen" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Merriweather:300,400,700,900" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css">
 </head>
@@ -18,12 +18,24 @@
     <a href="https://github.com/rawreef?tab=repositories">Github</a></h4>
 <h4>Email: myFirstName@thisWebsite</h4>
 <main>
-    <h1><a name="portfolio">Projects</a></h1>
+<section>
+    <h1>Projects</h1>
     <div class="project-container">
+        <div class="project">
+            <a href="#portfolio">
+                <div class="project-image">
+                    <img src="img/portfolio.png" alt="Portfolio">
+                </div>
+                <div class="project-info">
+                    <h3>Portfolio</h3>
+                    <p>Fully responsive site built from scratch.</p>
+                </div>
+            </a>
+        </div>
         <div class="project">
             <a href="#john-williams-quiz">
                 <div class="project-image">
-                    <img src="john-williams-quiz.png" alt="John Williams quiz">
+                    <img src="img/john-williams-quiz.png" alt="John Williams quiz">
                 </div>
                 <div class="project-info">
                     <h3>Film Music quiz</h3>
@@ -34,7 +46,7 @@
         <div class="project">
             <a href="#hot-or-cold">
                 <div class="project-image">
-                    <img src="hot-or-cold.png" alt="Hot or cold game">
+                    <img src="img/hot-or-cold.png" alt="Hot or cold game">
                 </div>
                 <div class="project-info">
                     <h3>Hot/cold game</h3>
@@ -45,7 +57,7 @@
         <div class="project">
             <a href="#shopping-list">
                 <div class="project-image">
-                    <img src="shopping-list.png" alt="Shopping list">
+                    <img src="img/shopping-list.png" alt="Shopping list">
                 </div>
                 <div class="project-info">
                     <h3>Shopping list</h3>
@@ -56,7 +68,7 @@
         <div class="project">
             <a href="#wax-tracks">
                 <div class="project-image">
-                    <img src="wax-tracks.png" alt="Wax Tracks">
+                    <img src="img/wax-tracks.png" alt="Wax Tracks">
                 </div>
                 <div class="project-info">
                     <h3>Wax Tracks</h3>
@@ -67,7 +79,7 @@
         <div class="project">
             <a href="#google-clone">
                 <div class="project-image">
-                    <img src="google-clone.png" alt="Google clone">
+                    <img src="img/google-clone.png" alt="Google clone">
                 </div>
                 <div class="project-info">
                     <h3>Google clone</h3>
@@ -76,99 +88,118 @@
             </a>
         </div>
     </div>
+</section>
 
 <!-- *******************************************************
-ABOUT SECTION
+'ABOUT' SECTION
 ******************************************************* -->
 
-<div class="about">
+<div class="regular-width">
+<section>
     <h1>About</h1>
-    <p>I'm a self-taught frontend web developer. My interest in the area began when I was creating a WordPress website for learning Finnish. I started digging into the code and making tweaks, but of course I didn't really know what I was doing. After a while, I decided I wanted to learn how to do it properly.
-    </p>I began by taking a three-month course with <a href="https://mitenmenee.com" target="_blank">Thinkful</a>. I liked the course as it threw me straight into it: building projects, using Github, engaging with the community, and having weekly mentor sessions. Since completing the course, I've been fleshing out my skills by taking other online courses, reading books and listening to many hours of podcasts.</p>
+    <p>I'm a self-taught frontend web developer. My interest was piqued when I was creating a WordPress website for learning Finnish. I started digging into the PHP and jQuery in the plugins I'd installed, and I was soon hooked. After a while of playing around, I decided I wanted to learn how to do it properly, so I signed up for a three-month course with <a href="https://mitenmenee.com" target="_blank">Thinkful</a>. I liked the course as it threw me straight into it: building projects, using Github, engaging with the community, and having weekly mentor sessions. Since completing the course, I've been fleshing out my skills by taking other online courses, reading books and listening to many hours of tech podcasts.</p>
     <p>I have a background in language training and live in Finland with my wife and two young daughters.</p>
+</section>
 
 <!-- *******************************************************
 TECHNICAL SKILLS TABLE
 ******************************************************* -->
 
+<section>
     <h1>Technical skills</h1>
-
     <table>
-      <caption>Breakdown of my technical skills by level and knowledge</caption>
-      <thead>
-        <tr>
-          <th scope="col">Skill</th>
-          <th scope="col">Level*</th>
-          <th scope="col">Relevant projects in my portfolio</th>
-        </tr>
-      </thead>
-      <tfoot>
-        <tr>
-          <td colspan="3">* Level descriptions: 1 = beginner, 3 = intermediate, 5 = advanced</td>
-        </tr>
-      </tfoot>
-      <tbody>
-        <tr>
-          <th scope="row">General</th>
-          <td class="table-center">3</td>
-          <td>I listen to <a href="http://devchat.tv/js-jabber/" target="_blank">JavaScript Jabber</a> and read <a href="http://javascriptweekly.com/" target="_blank">JavaScript Weekly</a>.</td>
-        </tr>
-        <tr>
-          <th scope="row">HTML</th>
-          <td class="table-center">4</td>
-          <td>All projects in portfolio</td>
-        </tr>
-        <tr>
-          <th scope="row">CSS</th>
-          <td class="table-center">4</td>
-          <td>All projects, especially Google clone and this responsive portfolio site</td>
-        </tr>
-        <tr>
-          <th scope="row">SASS</th>
-          <td class="table-center">1-2</td>
-          <td><a href="https://www.codeschool.com/users/825058" target="_blank">2 Code School courses completed</a></td>
-        </tr>
-        <tr>
-          <th scope="row">JavaScript</th>
-          <td class="table-center">3</td>
-          <td>John Williams quiz / Hot or cold game</td>
-        </tr>
-        <tr>
-          <th scope="row">jQuery</th>
-          <td class="table-center">3</td>
-          <td>John Williams quiz / Hot or cold game / Shopping list</td>
-        </tr>
-        <tr>
-          <th scope="row">Backbone.js</th>
-          <td class="table-center">1-2</td>
-          <td>Basic knowledge, plus I've listened to much discussion of frameworks on <a href="http://devchat.tv/js-jabber/" target="_blank">JavaScript Jabber</a>.</td>
-        </tr>
-        <tr>
-          <th scope="row">WordPress</th>
-          <td class="table-center">3</td>
-          <td>Deployed site and tweaked JavaScript in WordPress plugins while building site for learning Finnish.</td>
-        </tr>
-        <tr>
-          <th scope="row">UX</th>
-          <td class="table-center">3</td>
-          <td>John Williams quiz / Miten menee? / Shopping list. I read <a href="http://www.nngroup.com/articles/" target="_blank">Jakob Nielsen's newsletter</a>.</td>
-        </tr>
-      </tbody>
+        <caption>Breakdown of my technical skills by level and knowledge</caption>
+        <thead>
+            <tr>
+                <th scope="col">Skill</th>
+                <th scope="col">Level*</th>
+                <th scope="col">Details</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="3">* Level descriptions: 1 = basic, 3 = intermediate, 5 = advanced</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr>
+                <th scope="row">Backbone.js</th>
+                <td class="table-center">1</td>
+                <td>No projects yet, but I have learnt the fundamentals.</td>
+            </tr>
+            <tr>
+                <th scope="row">Ember.js</th>
+                <td class="table-center">1</td>
+                <td>No projects yet, but I have learnt the fundamentals.</td>
+            </tr>
+            <tr>
+                <th scope="row">CSS</th>
+                <td class="table-center">4</td>
+                <td>All projects listed here, especially <a href="#portfolio">this responsive portfolio site</a> and <a href="#google-clone">Google clone</a>.</td>
+            </tr>
+            <tr>
+                <th scope="row">General</th>
+                <td class="table-center">3</td>
+                <td>I am a regular listener to <a href="http://devchat.tv/js-jabber/" target="_blank">JavaScript Jabber</a> and read <a href="http://javascriptweekly.com/" target="_blank">JavaScript Weekly</a>.</td>
+            </tr>
+            <tr>
+                <th scope="row">HTML5</th>
+                <td class="table-center">4</td>
+                <td>All projects listed here, especially <a href="#portfolio">this portfolio site</a>, which shows my understanding of HTML5.</td>
+            </tr>
+            <tr>
+                <th scope="row">JavaScript</th>
+                <td class="table-center">3</td>
+                <td><a href="#john-williams-quiz">John Williams quiz</a> | <a href="#hot-or-cold">Hot or cold game</a></td>
+            </tr>
+            <tr>
+                <th scope="row">jQuery</th>
+                <td class="table-center">3</td>
+                <td><a href="#john-williams-quiz">John Williams quiz</a> | <a href="#hot-or-cold">Hot or cold game</a> | <a href="#shopping-list">Shopping list</a></td>
+            </tr>
+            <tr>
+                <th scope="row">Meteor</th>
+                <td class="table-center">1</td>
+                <td>No projects yet, but I have learnt the fundamentals.</td>
+            </tr>
+            <tr>
+                <th scope="row">PHP</th>
+                <td class="table-center">1</td>
+                <td>I have learnt some aspects of PHP through tweaking WordPress plugins.</td>
+            </tr>
+            <tr>
+                <th scope="row">SASS</th>
+                <td class="table-center">1</td>
+                <td>No projects yet, but I have learnt the fundamentals.</td>
+            </tr>
+            <tr>
+                <th scope="row">UX</th>
+                <td class="table-center">3</td>
+                <td><a href="#john-williams-quiz">John Williams quiz</a> | <a href="#shopping-list">Shopping list</a></td>
+            </tr>
+            <tr>
+                <th scope="row">WordPress</th>
+                <td class="table-center">3</td>
+                <td>Deployed site and tweaked JavaScript in WordPress plugins while building site for learning Finnish.</td>
+            </tr>
+        </tbody>
     </table>
-  </div>
+</section>
 
 <!-- *******************************************************
 PROJECT NOTES
 ******************************************************* -->
 
-</main>
-<div class="project-notes">
+<section>
     <h1>Project notes</h1>
-
+    <h2><a name="portfolio">Portfolio</a></h2>
+    <p>I built this portfolio site (the site you're looking at now) from scratch, i.e. without any CSS framework like Bootstrap. It is fully responsive and can be viewed and read easily on any device. If you're on a laptop or desktop, you can test this by adjusting the width of your browser window. The content works effectively at all widths, and never becomes squashed or difficult to read.</p><br>
+    <p class="small-button">
+        <a href="http://rawreef.github.io/portfolio/" target="_blank">Code</a>
+    </p>
     <h2><a name="john-williams-quiz">John Williams quiz</a></h2>
-    <p>I made this short quiz as simple and interactive as possible. Wrong answers turn red, sound an ominous gong and trigger feedback, which changes for each wrong answer. The right answer turns green and sounds a "ta-da" fanfare (which you might find a tiny bit irritating after a while).</p>
-    <p>The quiz demonstrates my improving frontend skills in HTML, CSS, JavaScript, jQuery, usability and design. The site has responsive images, and the quiz content is injected via JavaScript. I created a prototype object from which all the question objects were created.</p>
-    <p>I am getting better at making colours work together and using white space effectively. I used <a href="http://paletton.com" target="_blank">Paletton.com</a> to help me choose a suitable blue, green and red colour palette to work with.</p><br>
+    <p>I made this short quiz as simple and interactive as I could. Wrong answers turn red, sound an ominous gong and trigger feedback, which changes for each wrong answer. The right answer turns green and sounds a (mildly irritating) "ta-da" fanfare.</p>
+    <p>The quiz demonstrates my improving frontend skills in HTML, CSS, JavaScript, jQuery, usability and design. The quiz content is injected via JavaScript into the page. I created a prototype object from which all the question objects are created.</p><br>
     <p class="small-button">
         <a href="http://rawreef.github.io/john-williams-quiz/" target="_blank">Demo</a>
         <a href="https://github.com/rawreef/john-williams-quiz" target="_blank">Code</a>
@@ -176,14 +207,14 @@ PROJECT NOTES
 
     <h2><a name="hot-or-cold">Hot or cold game</a></h2>
     <p>The app picks a random number between 1 and 100 and you have to guess it. With each guess, you get feedback on how close you got.</p>
-    <p>For this project, I was required to add interactivity to the HTML and CSS files I was presented with. As a result, I learnt a very useful skill: how to take on a project that's already been started.</p><br>
+    <p>For this project, I was required to add interactivity to the HTML and CSS files I was presented with. It was instructive and useful to take over a project with some code already written by somebody else.</p><br>
     <p class="small-button">
         <a href="http://rawreef.github.io/hotOrCold/" target="_blank">Demo</a>
         <a href="https://github.com/rawreef/hotOrCold" target="_blank">Code</a>
     </p>
 
     <h2><a name="shopping-list">Shopping list</a></h2>
-    <p>This app shows me getting to grips with jQuery and jQuery UI. You can add shopping items, cross them out, delete them and re-arrange them. Shopping has never been such fun.</p><br>
+    <p>This app shows me getting to grips with jQuery and jQuery UI. You can add shopping items, cross them out, delete them and rearrange them. Shopping has never been such fun, has it?</p><br>
     <p class="small-button">
         <a href="http://rawreef.github.io/shopping-list-interactive/" target="_blank">Demo</a>
         <a href="https://github.com/rawreef/shopping-list-interactive" target="_blank">Code</a>
@@ -202,11 +233,12 @@ PROJECT NOTES
         <a href="http://rawreef.github.io/Google-Clone/" target="_blank">Demo</a>
         <a href="https://github.com/rawreef/Google-Clone" target="_blank">Code</a>
     </p>
-    <div class="footer-break"></div>
-
-</div>
+</section>
+</main>
+<div class="footer-break"></div>
+</div> <!-- end of 'regular-width' div -->
     <div class="footer-band"></div>
     <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
