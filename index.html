@@ -11,15 +11,29 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="header-band"></div>
-<div class="title">Daniel Clarke</div>
-<div class="sub-title">frontend web developer</div><br>
-<h4><a href="https://twitter.com/rawreef">Twitter</a>
-    <a href="https://github.com/rawreef?tab=repositories">Github</a></h4>
-<h4>Email: myFirstName@thisWebsite</h4>
+<header>
+    <div class="fixed-nav">
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="title">Daniel Clarke</div>
+    <div class="sub-title">frontend web developer</div><br>
+</header>
+
+<!-- *******************************************************
+'PROJECTS' SECTION
+******************************************************* -->
+
 <main>
+
 <section>
-    <h1>Projects</h1>
+    <a name="projects"><h1>Projects</h1></a>
     <div class="project-container">
         <div class="project">
             <a href="#portfolio">
@@ -29,6 +43,17 @@
                 <div class="project-info">
                     <h3>Portfolio</h3>
                     <p>Fully responsive site built from scratch.</p>
+                </div>
+            </a>
+        </div>
+        <div class="project">
+            <a href="#fcc-portfolio">
+                <div class="project-image">
+                    <img src="img/fcc.png" alt="Free Code Camp portfolio">
+                </div>
+                <div class="project-info">
+                    <h3>Free Code Camp</h3>
+                    <p>My portfolio of exercise solutions.</p>
                 </div>
             </a>
         </div>
@@ -65,7 +90,8 @@
                 </div>
             </a>
         </div>
-        <div class="project">
+        <!-- Project needs tidying up - commented out for now -->
+        <!-- <div class="project">
             <a href="#wax-tracks">
                 <div class="project-image">
                     <img src="img/wax-tracks.png" alt="Wax Tracks">
@@ -75,7 +101,7 @@
                     <p>A new front-page for a vinyl store.</p>
                 </div>
             </a>
-        </div>
+        </div> -->
         <div class="project">
             <a href="#google-clone">
                 <div class="project-image">
@@ -91,14 +117,98 @@
 </section>
 
 <!-- *******************************************************
-'ABOUT' SECTION
+PROJECT NOTES
 ******************************************************* -->
 
 <div class="regular-width">
 <section>
-    <h1>About</h1>
-    <p>I'm a self-taught frontend web developer. My interest was piqued when I was creating a WordPress website for learning Finnish. I started digging into the PHP and jQuery in the plugins I'd installed, and I was soon hooked. After a while of playing around, I decided I wanted to learn how to do it properly, so I signed up for a three-month course with <a href="https://mitenmenee.com" target="_blank">Thinkful</a>. I liked the course as it threw me straight into it: building projects, using Github, engaging with the community, and having weekly mentor sessions. Since completing the course, I've been fleshing out my skills by taking other online courses, reading books and listening to many hours of tech podcasts.</p>
-    <p>I have a background in language training and live in Finland with my wife and two young daughters.</p>
+    <a name="project-notes"><h1>Project notes</h1></a>
+
+    <a name="portfolio"><h2>Portfolio</h2></a>
+    <p>I built this portfolio site (the site you're looking at now) from scratch without using any framework. It is fully responsive and can be viewed and read easily on any device at any viewport width. I kept the responsiveness very simple with just two break points.</p>
+    <p>For good accessibility, I left wide margins when viewing the text sections in landscape view on a smart phone, so the user can zoom in considerably to enlarge the font, and still retain the full text on their screen. For anyone quite comfortable with small(ish)-sized text, I provided more compact text for portrait view on a smart phone.</p><br>
+    <p class="small-button">
+        <a href="http://rawreef.github.io/portfolio/" >Code</a>
+    </p>
+
+    <a name="fcc-portfolio"><h2>Free Code Camp portfolio</h2></a>
+    <p>I have started working through Free Code Camp's curriculum. You can view my progress, longest streak of study and my exercise solutions live on the site.</p><br>
+    <p class="small-button">
+        <a href="http://freecodecamp.com/rawreef">Portfolio</a>
+    </p>
+
+    <a name="john-williams-quiz"><h2>John Williams quiz</h2></a>
+    <p>I made this short quiz as simple and interactive as I could. Wrong answers turn red, sound an ominous gong and trigger feedback, which changes for each wrong answer. The right answer turns green and sounds a (mildly irritating) "ta-da" fanfare.</p>
+    <p>The quiz demonstrates my improving frontend skills in HTML, CSS, JavaScript, jQuery, usability and design. The quiz content is injected via JavaScript into the page. I created a prototype object from which all the question objects are created.</p><br>
+    <p class="small-button">
+        <a href="http://rawreef.github.io/john-williams-quiz/" >Demo</a>
+        <a href="https://github.com/rawreef/john-williams-quiz" >Code</a>
+    </p>
+
+    <a name="hot-or-cold"><h2>Hot or cold game</h2></a>
+    <p>The app picks a random number between 1 and 100 and you have to guess it. With each guess, you get feedback on how close you got.</p>
+    <p>For this project, I was required to add interactivity to the HTML and CSS files I was presented with. It was instructive and useful to take over a project with some code already written by somebody else.</p><br>
+    <p class="small-button">
+        <a href="http://rawreef.github.io/hotOrCold/" >Demo</a>
+        <a href="https://github.com/rawreef/hotOrCold" >Code</a>
+    </p>
+
+    <a name="shopping-list"><h2>Shopping list</h2></a>
+    <p>This app shows me getting to grips with jQuery and jQuery UI. You can add shopping items, cross them out, delete them and rearrange them. Shopping has never been such fun, has it?</p><br>
+    <p class="small-button">
+        <a href="http://rawreef.github.io/shopping-list-interactive/" >Demo</a>
+        <a href="https://github.com/rawreef/shopping-list-interactive" >Code</a>
+    </p>
+
+<!-- Project needs tidying up - commented out for now -->
+    <!-- <h2><a name="wax-tracks">Wax Tracks</a></h2>
+    <p>This basic page shows my early efforts with CSS. I enjoyed getting the semi-circular shape of the records to overlap and move upwards when hovered over, but my rookie efforts are not the most subtle. A useful learning process for me, nonetheless!</p><br>
+    <p class="small-button">
+        <a href="http://rawreef.github.io/wax-tracks/" >Demo</a>
+        <a href="https://github.com/rawreef/wax-tracks" >Code</a>
+    </p> -->
+
+    <a name="google-clone"><h2>Google clone</h2></a>
+    <p>My first attempt at doing something a little complicated in CSS! Google had better watch out...</p><br>
+    <p class="small-button">
+        <a href="http://rawreef.github.io/Google-Clone/" >Demo</a>
+        <a href="https://github.com/rawreef/Google-Clone" >Code</a>
+    </p><br>
+</section>
+
+<!-- *******************************************************
+SOFT SKILLS TABLE
+******************************************************* -->
+
+<section>
+    <a name="skills"><h1>Soft (and transferable) skills</h1></a>
+    <table>
+        <caption>Breakdown of my soft skills</caption>
+        <thead>
+            <tr>
+                <th scope="col">Skill</th>
+                <th scope="col">Details</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Teaching</th>
+                <td>Wide experience teaching English to 5- to 65-year-olds. I can communicate with and explain concepts to all kinds of people at all levels of domain expertise. I can also listen carefully to people's individual needs. I can also plan out a course of study.</td>
+            </tr>
+            <tr>
+                <th scope="row">Writing</th>
+                <td>Creating learning content for students. I can write clearly, accurately and concisely.</td>
+            </tr>
+            <tr>
+                <th scope="row">Learning</th>
+                <td>Learning frontend development skills has sharpened up my learning skills. I can find the best resources quickly and have developed strong learning techniques to pick up new skills quickly.</td>
+            </tr>
+            <tr>
+                <th scope="row">Enthusiasm</th>
+                <td>I listen to tech podcasts like <a href="http://devchat.tv/js-jabber/" >JavaScript Jabber</a> and <a href="http://www.codenewbie.org/podcast" >Code Newbie</a> for fun as well as instruction, and get excited when the <a href="http://javascriptweekly.com/" >JavaScript Weekly</a> newsletter arrives in my inbox.</td>
+            </tr>
+        </tbody>
+    </table>
 </section>
 
 <!-- *******************************************************
@@ -108,7 +218,7 @@ TECHNICAL SKILLS TABLE
 <section>
     <h1>Technical skills</h1>
     <table>
-        <caption>Breakdown of my technical skills by level and knowledge</caption>
+        <caption>Breakdown of my technical skills with links to relevant projects</caption>
         <thead>
             <tr>
                 <th scope="col">Skill</th>
@@ -123,29 +233,34 @@ TECHNICAL SKILLS TABLE
         </tfoot>
         <tbody>
             <tr>
-                <th scope="row">Backbone.js</th>
+                <th scope="row">AngularJS</th>
                 <td class="table-center">1</td>
-                <td>No projects yet, but I have learnt the fundamentals.</td>
+                <td>Fundamentals only. No projects yet.</td>
             </tr>
             <tr>
-                <th scope="row">Ember.js</th>
+                <th scope="row">Backbone.js</th>
                 <td class="table-center">1</td>
-                <td>No projects yet, but I have learnt the fundamentals.</td>
+                <td>Fundamentals only. No projects yet.</td>
             </tr>
             <tr>
                 <th scope="row">CSS</th>
                 <td class="table-center">4</td>
-                <td>All projects listed here, especially <a href="#portfolio">this responsive portfolio site</a> and <a href="#google-clone">Google clone</a>.</td>
+                <td>All projects, especially <a href="#portfolio">this responsive portfolio site</a> and <a href="#google-clone">Google clone</a>. Bootstrap fundamentals.</td>
+            </tr>
+            <tr>
+                <th scope="row">Databases</th>
+                <td class="table-center">2</td>
+                <td>Fundamentals of database design, SQL and MongoDB. No projects yet.</td>
             </tr>
             <tr>
                 <th scope="row">General</th>
                 <td class="table-center">3</td>
-                <td>I am a regular listener to <a href="http://devchat.tv/js-jabber/" target="_blank">JavaScript Jabber</a> and read <a href="http://javascriptweekly.com/" target="_blank">JavaScript Weekly</a>.</td>
+                <td>I am a regular listener to <a href="http://devchat.tv/js-jabber/" >JavaScript Jabber</a> and read <a href="http://javascriptweekly.com/" >JavaScript Weekly</a>.</td>
             </tr>
             <tr>
-                <th scope="row">HTML5</th>
+                <th scope="row">HTML</th>
                 <td class="table-center">4</td>
-                <td>All projects listed here, especially <a href="#portfolio">this portfolio site</a>, which shows my understanding of HTML5.</td>
+                <td>All projects listed here, especially <a href="#portfolio">this portfolio site</a>.</td>
             </tr>
             <tr>
                 <th scope="row">JavaScript</th>
@@ -160,7 +275,12 @@ TECHNICAL SKILLS TABLE
             <tr>
                 <th scope="row">Meteor</th>
                 <td class="table-center">1</td>
-                <td>No projects yet, but I have learnt the fundamentals.</td>
+                <td>Fundamentals only. No projects yet.</td>
+            </tr>
+            <tr>
+                <th scope="row">Node/npm</th>
+                <td class="table-center">2</td>
+                <td>Node.js fundamentals. Used npm to set up dev environment and deploy this site to <a href="https://surge.sh/" >Surge</a>.</td>
             </tr>
             <tr>
                 <th scope="row">PHP</th>
@@ -170,7 +290,7 @@ TECHNICAL SKILLS TABLE
             <tr>
                 <th scope="row">SASS</th>
                 <td class="table-center">1</td>
-                <td>No projects yet, but I have learnt the fundamentals.</td>
+                <td>Fundamentals only. No projects yet.</td>
             </tr>
             <tr>
                 <th scope="row">UX</th>
@@ -187,54 +307,28 @@ TECHNICAL SKILLS TABLE
 </section>
 
 <!-- *******************************************************
-PROJECT NOTES
+'ABOUT' SECTION
 ******************************************************* -->
 
 <section>
-    <h1>Project notes</h1>
-    <h2><a name="portfolio">Portfolio</a></h2>
-    <p>I built this portfolio site (the site you're looking at now) from scratch, i.e. without any CSS framework like Bootstrap. It is fully responsive and can be viewed and read easily on any device. If you're on a laptop or desktop, you can test this by adjusting the width of your browser window. The content works effectively at all widths, and never becomes squashed or difficult to read.</p><br>
-    <p class="small-button">
-        <a href="http://rawreef.github.io/portfolio/" target="_blank">Code</a>
-    </p>
-    <h2><a name="john-williams-quiz">John Williams quiz</a></h2>
-    <p>I made this short quiz as simple and interactive as I could. Wrong answers turn red, sound an ominous gong and trigger feedback, which changes for each wrong answer. The right answer turns green and sounds a (mildly irritating) "ta-da" fanfare.</p>
-    <p>The quiz demonstrates my improving frontend skills in HTML, CSS, JavaScript, jQuery, usability and design. The quiz content is injected via JavaScript into the page. I created a prototype object from which all the question objects are created.</p><br>
-    <p class="small-button">
-        <a href="http://rawreef.github.io/john-williams-quiz/" target="_blank">Demo</a>
-        <a href="https://github.com/rawreef/john-williams-quiz" target="_blank">Code</a>
-    </p>
-
-    <h2><a name="hot-or-cold">Hot or cold game</a></h2>
-    <p>The app picks a random number between 1 and 100 and you have to guess it. With each guess, you get feedback on how close you got.</p>
-    <p>For this project, I was required to add interactivity to the HTML and CSS files I was presented with. It was instructive and useful to take over a project with some code already written by somebody else.</p><br>
-    <p class="small-button">
-        <a href="http://rawreef.github.io/hotOrCold/" target="_blank">Demo</a>
-        <a href="https://github.com/rawreef/hotOrCold" target="_blank">Code</a>
-    </p>
-
-    <h2><a name="shopping-list">Shopping list</a></h2>
-    <p>This app shows me getting to grips with jQuery and jQuery UI. You can add shopping items, cross them out, delete them and rearrange them. Shopping has never been such fun, has it?</p><br>
-    <p class="small-button">
-        <a href="http://rawreef.github.io/shopping-list-interactive/" target="_blank">Demo</a>
-        <a href="https://github.com/rawreef/shopping-list-interactive" target="_blank">Code</a>
-    </p>
-
-    <h2><a name="wax-tracks">Wax Tracks</a></h2>
-    <p>This basic page shows my early efforts with CSS. I enjoyed getting the semi-circular shape of the records to overlap and move upwards when hovered over, but my rookie efforts are not the most subtle. A useful learning process for me, nonetheless!</p><br>
-    <p class="small-button">
-        <a href="http://rawreef.github.io/wax-tracks/" target="_blank">Demo</a>
-        <a href="https://github.com/rawreef/wax-tracks" target="_blank">Code</a>
-    </p>
-
-    <h2><a name="google-clone">Google clone</a></h2>
-    <p>My first attempt at doing something a little complicated in CSS! Google had better watch out...</p><br>
-    <p class="small-button">
-        <a href="http://rawreef.github.io/Google-Clone/" target="_blank">Demo</a>
-        <a href="https://github.com/rawreef/Google-Clone" target="_blank">Code</a>
-    </p>
+    <a name="about"><h1>About</h1></a>
+    <p>I'm a self-taught frontend web developer. My interest was piqued when I was creating a WordPress website for learning Finnish. I started digging into the PHP and jQuery in the plugins I'd installed, and I was soon hooked.</p> <p>After playing around for a while, I realised I wanted to learn how to do it properly, so I signed up for a three-month course with <a href="https://www.thinkful.com" >Thinkful</a>. I liked the course as it threw me straight into it: building projects, using Github, engaging with the community, and having weekly mentor sessions. Since completing the course, I've been fleshing out my skills by taking other online courses, reading books and listening to many hours of tech podcasts.</p>
+    <p>I have a background in language training and live in Finland with my wife and two young daughters.</p>
 </section>
+
 </main>
+
+<!-- *******************************************************
+'CONTACT ME' SECTION
+******************************************************* -->
+
+<section>
+    <a name="contact"><h1>Contact me</h1></a>
+    <h4><a href="https://twitter.com/rawreef">Twitter</a>
+        <a href="https://github.com/rawreef?tab=repositories">Github</a></h4>
+    <h4>Email: myFirstName@thisWebsite</h4>
+</section>
+
 <div class="footer-break"></div>
 </div> <!-- end of 'regular-width' div -->
     <div class="footer-band"></div>

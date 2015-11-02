@@ -1,41 +1,62 @@
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
-  font-family: "Merriweather", serif;
-  text-align: center;
-  color: #56564e;
-  line-height: 1.4;
+    font-family: "Merriweather", serif;
+    text-align: center;
+    color: #56564e;
+    line-height: 1.4;
+}
+
+nav ul {
+    padding: 10px;
+    background-color: #709d9e;
+}
+
+nav ul li {
+    display: inline;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: #EEE;
+}
+
+.fixed-nav {
+    position: fixed;
+    /*top: 0;*/
+    width: 100%;
 }
 
 .header-band, .footer-band {
-  height: 5px;
-  background-color: #709d9e;
+    height: 5px;
+    background-color: #709d9e;
 }
 
 .footer-break {
-  height: 40px;
+    height: 40px;
 }
 
 .title {
-  font-size: 2.6em;
-  padding: 50px 0 0;
-  font-weight: 900;
-  color: #56564e;
-  line-height: 1.1;
+    font-size: 2.6em;
+    padding: 90px 0 0;
+    font-weight: 900;
+    color: #56564e;
+    line-height: 1.1;
 }
 .sub-title {
-  font-size: 1.8em;
-  font-weight: 300;
+    font-size: 1.8em;
+    font-weight: 300;
+    margin-bottom: -30px;
 }
 
 a {
-  text-decoration: none;
-  color: #555;
+    text-decoration: none;
+    color: #555;
 }
 
 h4 a {
@@ -43,38 +64,36 @@ h4 a {
 }
 
 .regular-width {
-  margin: 0 auto;
-  width: 610px;
-  line-height: 1.6;
-  font-size: 1em;
-  text-align: left;
+    margin: 0 auto;
+    width: 610px;
+    line-height: 1.6;
+    font-size: 1em;
+    text-align: left;
 }
 
 .regular-width p {
-  padding: 0;
-  margin: 0 0 15px;
+    padding: 0;
+    margin: 0 0 15px;
 }
 
 .regular-width h1, .table-center {
-  text-align: center;
+    text-align: center;
 }
 
-.regular-width a {
-  color: #709d9e;
-  text-decoration: underline;
+/*.regular-width p a {*/
+.regular-width p a, .regular-width tbody a {
+    color: #709d9e;
+    text-decoration: underline;
 }
 
-.regular-width h2 a {
-  color: #56564e;
-  text-decoration: none;
+.regular-width .small-button a {
+    color: #eee;
+    text-decoration: none;
 }
 
-.large-button a {
-    color: #fff;
-    background-color: #709d9e;
-    padding: 10px 20px 6px;
-    border-radius: 5px;
-    margin: 50px;
+.regular-width a h2, .regular-width a h1 {
+    color: #56564e;
+    text-decoration: none;
 }
 
 .small-button a {
@@ -87,12 +106,12 @@ h4 a {
 }
 
 h1, h3 {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 h1 {
-  font-size: 2em;
-  margin: 60px 0 25px 0;
+    font-size: 2em;
+    margin: 60px 0 25px 0;
 }
 
 .regular-width h2 {
@@ -101,147 +120,126 @@ h1 {
 }
 
 h2 {
-  margin: 30px 0 10px;
-  padding: 25px 0 0 0;
+    margin: 30px 0 10px;
+    padding: 25px 0 0 0;
 }
 
-h2 a {
-  font-size: 1.6em;
-  color: #56564e;
-  text-transform: none;
+a h2 {
+    font-size: 1.6em;
+    color: #56564e;
+    text-transform: none;
+    text-decoration: none;
 }
 
 h3 {
-  font-size: 1.2em;
-  padding: 20px 20px 0 20px;
-  color: #709d9e;
+    font-size: 1.2em;
+    padding: 20px 20px 0 20px;
+    color: #709d9e;
 }
 
 .project-container {
-  width: 1010px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #dcdedf;
-  border-radius: 5px;
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #dcdedf;
 }
 
 .project-container p {
-  padding: 20px;
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.9em;
+    padding: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.9em;
 }
 
 .project {
-  height: 320px;
-  width: 280px;
-  background-color: #fff;
-  padding: 5px;
-  margin: 20px;
-  display: inline-block;
-  border-radius: 5px;
+    height: 320px;
+    width: 280px;
+    background-color: #fff;
+    padding: 5px;
+    /*margin: 20px;*/
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
 }
 
 div.project:hover {
-  background-color: #709d9e;
+    background-color: #709d9e;
 }
 
 .project-image {
-  height: 155px;
-  width: 270px;
-  background-color: #555;
+    height: 155px;
+    width: 270px;
+    background-color: #555;
 }
 
 .project-info {
-  height: 155px;
-  width: 270px;
-  background-color: #fff;
-  padding: 20px;
+    height: 155px;
+    width: 270px;
+    background-color: #fff;
+    padding: 20px;
 }
 
 
 
 /*********************************************************/
-/* TABLE
+/* TABLES
 **********************************************************/
 
 table {
-  font-size: 15px;
+    font-size: 15px;
 }
 
 caption {
-  display: none;
+    display: none;
 }
 
 thead th {
-  background: #709d9e;
-  color: #fff;
+    background: #709d9e;
+    color: #fff;
 }
 
-th td {
-  text-decoration: bold;
-}
+th td { text-decoration: bold; }
 
 th, td {
-  padding: 10px;
+    padding: 10px;
 }
 
 tr:nth-child(even) {
-  background: #e8eeef;
+    background: #e8eeef;
 }
 
 tfoot td {
-  color: #888;
-  font-size: 13px;
+    color: #888;
+    font-size: 13px;
 }
 
 /*********************************************************/
 /* MEDIA QUERIES
 **********************************************************/
 
-/* Break point - drops from 3 to 2 columns */
-@media (max-width: 1023px) {
-  .project-container {
-    width: 690px;
-  }
-}
-
-/* Break point - drops from 2 to 1 columns */
+/* Smaller title and headings */
 @media (max-width: 709px) {
-  .project-container {
-    width: 360px;
-  }
-  .title {
-    font-size: 28px;
-    padding: 20px 0 5px;
-  }
-  .sub-title {
-    font-size: 15px;
-  }
-  h1 {
-    font-size: 22px;
-    margin: 30px 0 5px 0;
-  }
-  .regular-width {
-    width: 80%;
-  }
+    .title {
+        font-size: 28px;
+        padding: 70px 0 5px 5px;
+    }
+    .sub-title {
+        font-size: 15px;
+    }
+    h1 {
+        font-size: 22px;
+        margin: 55px 0 25px 0;
+    }
+    .regular-width {
+        width: 80%;
+    }
 }
 
-/* Mobile portrait - more compact text */
+/* Smaller and more compact text */
 @media (max-width: 479px) {
-  .regular-width {
-    width: 88%;
-    margin: 0 auto;
-    line-height: 1.6;
-    font-size: 0.9em;
-  }
-  .project-container {
-    width: 300px;
-    margin: 40px auto;
-    padding: 5px;
-  }
-  .project {
-    margin: 5px;
-    display: inline-block;
-    border-radius: 5px;
-  }
+    .regular-width {
+        margin: 0 auto;
+        line-height: 1.6;
+        font-size: 0.9em;
+        width: 92%;
+    }
 }
